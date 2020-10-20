@@ -42,7 +42,7 @@ else{
 
 
 /***********************/
-//TODO:DESCOMENTAR
+
 const dimension = 3;
 
 //Error porque una constante debe estar asginada
@@ -55,8 +55,6 @@ let arreglo : string[] = ["Estudiante1", "Estudiante2", "Estudiante3"];
 let tablero : number[] = [0,0,0,0,0,0,0,0,0];
 let estado : boolean[] = [false, false, false, false, false, false, false, false, false];
 
-
-
 //TODO: ESTO NO PORQUE NO PUEDO LLAMAR AL ARREGLO DE ESA FORMA
 function agregar(i : number, j : number, nota : number) : boolean{
   if(!estado[i * dimension + j]){
@@ -68,9 +66,11 @@ function agregar(i : number, j : number, nota : number) : boolean{
   return false;
 }
 
+
 function imprimirPromedio(estudiante : number){
   let promedio = (tablero[estudiante * dimension + 0] + tablero[estudiante * dimension + 1] + tablero[estudiante * dimension + 2])/3;
-  console.log("Promedio Estudiante ", arreglo[estudiante], " = ", promedio);
+  //TODO:CAMBIE LAS COMAS POR '+'
+  console.log("Promedio Estudiante "+ arreglo[estudiante]+ " = "+ promedio);
 }
 
 //Error porque es una constante
@@ -100,3 +100,16 @@ imprimirPromedio(2); //70 -> + 0.5
 
 //Debe imprimir posicion ocupada -> + 0.5
 agregar(2,0, -1);
+
+
+
+/*
+Aritmeticas 100
+Lógica 1 = false,true,false,true
+Lógica 2 = true,false
+Relacionels 100
+Promedio Estudiante  Estudiante1  =  92.33333333333333
+Promedio Estudiante  Estudiante2  =  91.66666666666667
+Promedio Estudiante  Estudiante3  =  73.33333333333333
+Posicion ocupada
+*/
