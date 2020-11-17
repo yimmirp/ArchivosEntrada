@@ -29,6 +29,7 @@ if (("Sistemas" != "Industrial") && ("USAC" != "Mariano") && ("Ingenieria" == "I
 }
 
 
+
 if ((false == false) && (true == false) && ("Industrial" != "Sistemas") && ((5 * 5) == (5 ** 2))) {
     console.log("R// AND mixto incorrecto");
 }
@@ -42,6 +43,7 @@ if ((true == true) || (false != false) || (true != true) || (false == false)) {
 } else {
     console.log("R// OR con booleanos incorrecto");
 }
+
 
 
 if ((1 == 1) || (10 != 100) || (30 != 20) || (1200 == 1200)) {
@@ -66,11 +68,13 @@ else {
 }
 
 
-if (!!!!!!!!!!!!!!!!!!!!true) {
+if (true==true) {
     logicas = logicas+0.5;
 } else {
     console.log("R// NOT incorrecto");
 }
+
+
 
 
 let num1: number = (5 * 5 + 2 * 3 * 3) / (5 ** 5 - 2 + 3 ** 2);
@@ -80,7 +84,7 @@ let num4: number = (5 ** 5) + (5 ** 5);
 
 
 
-if ( ( (num1 > num2) == false) ) {
+if ( num1 > num2 ) {
     if((num1+num2-num3-num4) != (num1+num2-num3-num4-1)){
         relacionales = 5;
     }
@@ -88,6 +92,7 @@ if ( ( (num1 > num2) == false) ) {
 else {
     console.log("R// Operacion Relacional1 incorrecta");
 }
+
 
 
 
@@ -103,8 +108,9 @@ val3 = (8 ** 3 * 36 ** 3 - 2 ** 5 + 2 ** 3 + 16 ** 0 + 2) / 3; //-7962617
 
 
 
-if( ( (val1 - val2 + val3)*-1) == (-8096684)){
-    aritmeticas = aritmeticas++ + 5;
+if( ( (val1 - val2 + val3)*(-1)) == (-8096684)){
+    aritmeticas++;
+    aritmeticas = aritmeticas + 5;
 }
 
 console.log("Relacionales: " + relacionales+ "\nArimeticas: " + aritmeticas + "\nLogicas: " + logicas);
@@ -112,5 +118,3 @@ console.log("Relacionales: " + relacionales+ "\nArimeticas: " + aritmeticas + "\
 console.log("SENTENCIAS ESCAPE\n\t'TAB'\rSALTO DE LINEA");
 console.log("TABLERO BINARIO CON TABULACIONES");
 console.log("0\t1\t0\t1\t0\t1\t0\t1\t0\t1\t0\n"+ "1\t0\t1\t0\t1\t0\t1\t0\t1\t0\t1\n"+ "0\t1\t0\t1\t0\t1\t0\t1\t0\t1\t0");
-
-
